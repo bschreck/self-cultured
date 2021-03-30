@@ -33,7 +33,7 @@ async function generateSiteMap() {
           .replace('/index', '')
         const route = path === '/index' ? '' : path
         return `
-                      <url><loc>${`https://devx.sh${route}`}</loc></url>\n`.trimStart()
+                      <url><loc>${`https://selfcultured.com${route}`}</loc></url>\n`.trimStart()
       })
       .join('')}</urlset>`.trim()
 

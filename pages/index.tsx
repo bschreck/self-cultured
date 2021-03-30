@@ -11,6 +11,9 @@ import { Preview } from '../src/components/Preview'
 import Head from 'next/head'
 import { NAME, NAME_AND_DOMAIN } from '../src/types/constants'
 import SocialIcons from '../src/components/SocialIcons'
+import Donations from '../src/components/Donations'
+import Link from 'next/link'
+import { Chip } from '@material-ui/core'
 
 const Home = ({ postsData, sortedTopics }: { postsData: PostData[]; sortedTopics: string[] }): ReactElement => {
   const large = useMediaQuery('(min-width:700px)')
@@ -30,11 +33,18 @@ const Home = ({ postsData, sortedTopics }: { postsData: PostData[]; sortedTopics
             <Typography variant={large ? 'h1' : 'h4'}>{NAME_AND_DOMAIN}</Typography>
             <Typography className={styles.secondHeading} variant={large ? 'h6' : 'h6'}>
               Hi! I'm Ben Schreck. I write here on crypto, skateboarding, fermentation, gardening, and other non-connected things.
+              <br></br>
+              <Link href="/aboutme">
+                More about me
+              </Link>
             </Typography>
           </Box>
         </Grid>
         <Grid item xs={12}>
           <SocialIcons/>
+        </Grid>
+        <Grid item xs={12}>
+          <Donations/>
         </Grid>
         <Grid item xs={12}>
           <TopicsDisplay topics={sortedTopics} n={5} />

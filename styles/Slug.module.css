@@ -9,7 +9,15 @@
     max-width: 90%;
     margin: 0;
     padding: 0;
-    height: 498px;
+    height: auto;
+}
+
+.small-image {
+    width: 400px;
+    max-width: 90%;
+    margin: 0;
+    padding: 0;
+    height: auto;
 }
 
 .info {

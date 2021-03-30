@@ -28,11 +28,11 @@ const useStyles = makeStyles({
   //toolbarContent: {
   //  paddingLeft: 70,
   //},
-  //toolbarRight: {
-  //  right: 0,
-  //  position: 'absolute',
-  //  paddingRight: '5%',
-  //},
+  toolbarRight: {
+    right: 0,
+    position: 'absolute',
+    paddingRight: '5%',
+  },
 })
 
 export const TopBar = (): ReactElement => {
@@ -49,7 +49,7 @@ export const TopBar = (): ReactElement => {
             <img
               src="/logo/white.png"
               height="25px"
-              alt="devx.sh"
+              alt="Self Cultured Logo"
               style={{ paddingRight: 10, verticalAlign: 'bottom' }}
             />
           </a>
@@ -57,10 +57,10 @@ export const TopBar = (): ReactElement => {
           */}
         <Link href="/">
           <a>
-            <Typography variant="h6" display="inline" style={!isDark ? { color: '#fff' } : {}}>
+            <Typography variant="h6" display="inline" style={{}}>
               {NAME_AND_DOMAIN}
             </Typography>
-            <Typography variant="subtitle1" display="inline" style={{ color: '#fff', margin: "5px" }}>
+            <Typography variant="subtitle1" display="inline" style={{ margin: "5px" }}>
               by Ben Schreck
             </Typography>
           </a>
@@ -74,14 +74,23 @@ export const TopBar = (): ReactElement => {
             </Button>
           </Link>
         </div>
+          */}
         <div className={classes.toolbarRight}>
+          <Link href="/aboutme">
+            <a>
+              <Typography variant="h6" display="inline" style={!isDark ? { color: '#fff' } : {}}>
+                About Me
+              </Typography>
+            </a>
+          </Link>
+        {/*
           <Tooltip title="Toggle Theme">
             <Button variant="text" color="inherit" onClick={toggleTheme}>
               {isDark ? <SunIcon /> : <MoonIcon />}
             </Button>
           </Tooltip>
-        </div>
           */}
+        </div>
       </Toolbar>
     </AppBar>
   )

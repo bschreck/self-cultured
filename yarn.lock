@@ -298,6 +298,16 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.1.1.tgz#9daf5745156fd84b8e9889a2dc721f0c58e894aa"
   integrity sha512-CAEbWH7OIur6jEOzaai83jq3FmKmv4PmX1JYfs9IrYcGEVI/lyL1EXJGCj7eFVJ0bg5QR8LMxBlEtA+xKiLpFw==
 
+"@iconify-icons/cryptocurrency@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/cryptocurrency/-/cryptocurrency-1.1.1.tgz#cb3ecfe28c5a24d1d73fd5d33aed6955418e34bd"
+  integrity sha512-gc6TKs4ILIc020K3ATDBu7Hd4ddZHDMk3GXDgSYCFb5vmfdKMR/WhppusQ6eQr0f0UUG/rtIQLzO/Y3jl//3Mw==
+
+"@iconify/react@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-1.1.4.tgz#c778eddbaf196e55705d0bedff00d039dc1de8d3"
+  integrity sha512-oxq8IMOq8q3nKGiDHbQPC8FcFuBsKve68JWBo140d5LRnj0bv5TB/FE/y01ZSvEZ7PlI2HIrnb2qivPN8kTDgw==
+
 "@material-ui/core@^4.11.3":
   version "4.11.3"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.11.3.tgz#f22e41775b0bd075e36a7a093d43951bf7f63850"
@@ -2936,6 +2946,11 @@ raw-body@2.4.1:
     http-errors "1.7.3"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+react-cryptocoins@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/react-cryptocoins/-/react-cryptocoins-1.0.11.tgz#c2f3ea9303538fba9179bc39e4ecb237f7b5f589"
+  integrity sha512-9HAqYA718bBcYYtGPLPOtlAAQZn/fSgLxxfX5RIYN+XZkZC7wDU1UV+hHoj9/D35zOAWxZyuJKK3g3haZtZSiA==
 
 react-dom@17.0.2:
   version "17.0.2"

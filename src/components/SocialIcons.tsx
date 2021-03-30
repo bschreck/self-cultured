@@ -18,6 +18,7 @@ const useStyles = makeStyles({
   innerTypo: {
     margin: "5px",
     verticalAlign: "middle",
+    display: "inline"
   },
   icon: {
     verticalAlign: "middle",
@@ -36,15 +37,15 @@ const SocialIcons = ({ noMargin = undefined }: SocialIconsProps): ReactElement =
     <div style={noMargin ? {} : { width: '90%', margin: 'auto', textAlign: 'center', display: 'block' }}>
         <a className={noMargin ? classes.buttonPaddingNoMargin : classes.buttonPadding} href="https://twitter.com/benschreck">
           <TwitterIcon className={classes.icon}/>
-          <Typography display="inline" className={classes.innerTypo}>@benschreck</Typography>
+          <Typography className={classes.innerTypo}>@benschreck</Typography>
         </a>
         <a className={noMargin ? classes.buttonPaddingNoMargin : classes.buttonPadding}  href="https://www.instagram.com/culturedben">
           <InstagramIcon className={classes.icon}/>
-          <Typography display="inline" className={classes.innerTypo}>@culturedben</Typography>
+          <Typography className={classes.innerTypo}>@culturedben</Typography>
         </a>
         <a className={noMargin ? classes.buttonPaddingNoMargin : classes.buttonPadding}  href="https://www.github.com/bschreck">
           <GitHubIcon className={classes.icon}/>
-          <Typography display="inline" className={classes.innerTypo}>@bschreck</Typography>
+          <Typography className={classes.innerTypo}>@bschreck</Typography>
         </a>
     </div>
   )
